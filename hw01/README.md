@@ -21,7 +21,7 @@
    - a. Find the total average response time. (5%)
    - b. Now suppose a cache is installed in the institutional LAN. Suppose the miss rate is 0.4. Find the total response time. (5%)
 
-   ![Q5](./imgs/q5.png)
+   ![Q5](https://github.com/1chooo/socket-programming/blob/main/hw01/imgs/q5.png?raw=true)
 
 6. Q: the UDP server described needed only one socket, whereas the TCP server needed two sockets. Why? If the TCP server were to support n simultaneous connections, each from a different client host, how many sockets would the TCP server need? (10%)
 

@@ -1,14 +1,20 @@
+/*
+Created Date: 2023/10/18
+Author: @1chooo (Hugo ChunHo Lin)
+Version: v0.0.1
+*/
+
 package main
 
-import (
-    "fmt"
-    "net"
-    "bufio"
-    "os"
-)
+import "fmt"
+import "net"
+import "bufio"
+import "os"
 
 func main() {
-    conn, err := net.Dial("tcp", "localhost:8080")
+    service := "localhost:1200"
+    conn, err := net.Dial("tcp", service)
+
     if err != nil {
         fmt.Println("Error connecting:", err)
         return

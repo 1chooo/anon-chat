@@ -1,11 +1,15 @@
+/*
+Created Date: 2023/10/18
+Author: @1chooo (Hugo ChunHo Lin)
+Version: v0.0.1
+*/
+
 package main
 
-import (
-	"fmt"
-	"net"
-	"bufio"
-	"sync"
-)
+import "fmt"
+import "net"
+import "bufio"
+import "sync"
 
 type Client struct {
 	conn    net.Conn
@@ -61,16 +65,17 @@ func broadcastMessage(message string) {
 }
 
 func main() {
+	service := "localhost:1200"
 	clients = make(map[net.Conn]Client)
 
-	listener, err := net.Listen("tcp", "localhost:8080")
+	listener, err := net.Listen("tcp", service)
 	if err != nil {
 		fmt.Println("Error listening:", err)
 		return
 	}
 	defer listener.Close()
 
-	fmt.Println("Chat server started on :8080")
+	fmt.Println("Chat server started on :1200")
 
 	for {
 		conn, err := listener.Accept()

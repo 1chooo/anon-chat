@@ -10,6 +10,7 @@ import "fmt"
 import "net"
 import "bufio"
 import "sync"
+import "time"
 
 type Client struct {
 	conn    net.Conn
@@ -36,8 +37,9 @@ func handleClient(conn net.Conn) {
 	clients[conn] = client
 	clientsMutex.Unlock()
 
-	broadcastMessage(name + " has joined the chat")
-	fmt.Println(name + " has joined the chat")
+	joinedRealTime := time.Now()
+	broadcastMessage(name + " has joined the chat " + joinedRealTime.Format("2006-01-02 15:04:05"))
+	fmt.Println(name + " has joined the chat " + joinedRealTime.Format("2006-01-02 15:04:05"))
 
 	for client.scanner.Scan() {
 		message := client.scanner.Text()
@@ -47,9 +49,9 @@ func handleClient(conn net.Conn) {
 	clientsMutex.Lock()
 	delete(clients, conn)
 	clientsMutex.Unlock()
-
-	broadcastMessage(name + " has left the chat")
-	fmt.Println(name + " has left the chat")
+	leftRealTime := time.Now()
+	broadcastMessage(name + " has left the chat " + leftRealTime.Format("2006-01-02 15:04:05"))
+	fmt.Println(name + " has left the chat " + leftRealTime.Format("2006-01-02 15:04:05"))
 }
 
 func broadcastMessage(message string) {
@@ -65,6 +67,8 @@ func broadcastMessage(message string) {
 }
 
 func main() {
+	fmt.Println("Server Running...")
+
 	service := "localhost:1200"
 	clients = make(map[net.Conn]Client)
 
@@ -75,7 +79,8 @@ func main() {
 	}
 	defer listener.Close()
 
-	fmt.Println("Chat server started on :1200")
+	currentTime := time.Now()
+	fmt.Println("Chat server started on localhost:1200 ", currentTime.Format("2006-01-02 15:04:05"))
 
 	for {
 		conn, err := listener.Accept()

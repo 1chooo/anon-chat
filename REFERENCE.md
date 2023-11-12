@@ -18,3 +18,4 @@
 ## React
 
 - [Complete Remove/Uninstall node form mac OS](https://dev.to/whovishnu/complete-removeuninstall-node-form-mac-os-1kln)
+- [yarn: command not found error [Solved]](https://bobbyhadz.com/blog/npm-command-not-found-yarn)

@@ -23,9 +23,11 @@ class App extends Component {
 		});
 	}
 
-	send() {
-		console.log("hello");
-		sendMsg("hello");
+	send(event) {
+		if (event.keyCode === 13) {		// Enter key
+			sendMsg(event.target.value);
+			event.target.value = "";
+		}
 	}
 
 	render() {

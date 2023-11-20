@@ -4,6 +4,7 @@ import { connect, sendMsg } from "./api";
 import Header from './components/Header/Header';
 import ChatHistory from './components/ChatHistory/ChatHistory';
 import ChatInput from './components/ChatInput/ChatInput';
+import Footer from "./components/Footer/Footer";
 
 class App extends Component {
 	constructor(props) {
@@ -32,10 +33,16 @@ class App extends Component {
 
 	render() {
 		return (
-			<div className="App">
-				<Header />
-				<ChatHistory chatHistory={this.state.chatHistory} />
-				<ChatInput send={this.send} />
+			<div>
+				<div className="App">
+					<Header />
+					<ChatHistory chatHistory={this.state.chatHistory} />
+					<ChatInput send={this.send} />
+				</div>
+
+				<div>
+					<Footer/>
+				</div>
 			</div>
 		);
 	}

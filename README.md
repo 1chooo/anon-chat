@@ -1,21 +1,35 @@
 # Socket Programming
 
-## Project Description:
+## Initial Setup
 
-Introducing **"Disney Chat"** – a chat room with a magical Disney theme! With **Disney Chat**, you can communicate with your friends in a delightful, Disney-inspired chat environment. Whether you want to chat, share your favorite Disney moments, or simply enjoy the enchanting atmosphere, this chat room is the perfect place to connect.
+```shell
+# Frontend with ReactJS
+$ mkdir frontend
+$ cd frontend
+$ npm install -g create-react-app
+$ npx create-react-app .
+$ yarn add node-sass
 
-**Features:**
+# Backend with GO
+$ mkdir backend
+$ cd backend
+$ go mod init github.com/1chooo/socket-programming
+$ go get github.com/gorilla/websocket
+```
 
-1. **Real-Time Chat:** **Disney Chat** offers real-time messaging, allowing you to chat instantly with friends, no matter where they are.
-2. **Multi-User Support:** **Disney Chat** enables multiple users to engage in conversations simultaneously. Chat with one friend or join group discussions with many—it's all at your fingertips.
-3. **Anonymous Chat:** If you prefer to remain anonymous, **Disney Chat** offers the option to use a unique nickname while chatting. Protect your privacy while enjoying the chat.
+### 作業要求:
+- 每位同學需製作出TCP or UDP Socket 的程式 (50%/80%) 剩下的30%會是加分項目
+- 一分PDF實驗報告，需詳細解釋出程式的功能(20%)
+- 不限制任何的程式語言
 
-**Implementation Using Go Language:**
+### 加分項目:
+- GUI介面、多Client連接(Multithreading)、Non blocking socket、功能完整、有創意均可加分
 
-1. **Server Side:** The server side of **Disney Chat** can be developed using Go. You can create a Go program that listens for incoming connections and manages the chat room. This server will handle user authentication, message broadcasting, and managing the chat rooms.
-2. **Client Side:** The client side can also be developed in Go, allowing users to connect to the server and interact with the chat room. Users can choose to chat with their own Disney-themed nickname and send Disney emojis to friends.
-
-This approach offers a scalable and efficient solution for creating a Disney-themed chat room where users can engage in real-time conversations, express themselves with Disney emojis, chat anonymously, and interact with multiple users, all using the power and simplicity of the Go language
+### DEMO方式:
+- 需自備筆電，若沒有筆電需要跟同學借，助教的電腦不開放Demo
+- 來實驗室Demo的時間以及截止時間尚未決定，之後會公布在eeclass
+- 助教在Demo時會問問題，這個也會算在評分內
+- Demo若有出現問題的話，會被扣分
 
 ## License
 Released under [MIT](./LICENSE) by [Hugo ChunHo Lin](https://github.com/1chooo).

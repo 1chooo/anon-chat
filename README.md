@@ -1,8 +1,6 @@
 # Online Anonymous Multi-User Message Board
 
-
-
-https://github.com/1chooo/socket-programming/assets/94162591/481c9884-bd10-4141-9958-a4f9cedc2e83
+https://github.com/1chooo/socket-programming/assets/94162591/18f5680f-6982-4b40-861d-5a2fa4c3975a
 
 
 

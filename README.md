@@ -1,5 +1,11 @@
 # Online Anonymous Multi-User Message Board
 
+
+
+https://github.com/1chooo/socket-programming/assets/94162591/481c9884-bd10-4141-9958-a4f9cedc2e83
+
+
+
 ## Initial Setup
 
 ```shell

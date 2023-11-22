@@ -1,10 +1,37 @@
 .Footer {
-    background-color: #8FA8C2;
-    // background-color: #3B4C59;
-    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #232f3e;
+    color: #f2f2f2;
+    position: fixed;
     padding: 10px;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
     width: 100%;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+
+    a {
+        margin-right: 20px; /* 將圖示的右邊距增加 */
+        img {
+            width: 30px;
+            height: 30px;
+            transition: transform 0.3s ease;
+        }
+        &:hover {
+            img {
+                transform: scale(1.2); /* 縮小圖示的比例 */
+            }
+        }
+    }
+}
+
+.copyright {
+    margin-left: 50px; /* 將版權文字的左邊距增加 */
+}
+
+.copyright a {
+    color: #FEBD69; 
 }

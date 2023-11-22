@@ -30,7 +30,7 @@ class ChatHistory extends Component {
         );
 
         return (
-            <div className='ChatHistory' style={{ height: "300px", overflowY: "auto" }} ref={this.chatHistoryRef}>
+            <div className='ChatHistory' style={{ height: "320px", overflowY: "auto" }} ref={this.chatHistoryRef}>
                 {messages}
             </div>
         );

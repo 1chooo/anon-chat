@@ -2,18 +2,36 @@ import React from 'react';
 import './Footer.scss';
 
 export default function Footer() {
-    const socialMediaLinks = [
-        { icon: ['fab', 'facebook-f'], link: 'https://www.facebook.com/' },
-        { icon: ['fab', 'twitter'], link: 'https://www.twitter.com/' },
-        { icon: ['fab', 'google'], link: 'https://www.google.com/' },
-        { icon: ['fab', 'instagram'], link: 'https://www.instagram.com/' },
-        { icon: ['fab', 'linkedin'], link: 'https://www.linkedin.com/' },
-        { icon: ['fab', 'github'], link: 'https://www.github.com/' }
-    ];
-
     return (
         <footer className="Footer">
-            <p> © 2023 Copyright: Hugo ChunHo Lin</p>
+            {/* <br /> */}
+            <h5 className='copyright'>
+                © 2023 Copyright:&nbsp;
+                <a href="https://1chooo-github-io.vercel.app/" target="_blank">
+                    Hugo ChunHo Lin 👨🏻‍💻
+                </a>
+            </h5>
+            <div className='icon'>
+                <p align="center">
+                    <a href="https://github.com/1chooo" target="_blank">
+                        <img src="https://skillicons.dev/icons?i=github" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/1chooo/" target="_blank">
+                        <img src="https://skillicons.dev/icons?i=linkedin" />
+                    </a>
+                    <a href="https://awseducate.tw/2" target="_blank">
+                        <img src="https://skillicons.dev/icons?i=aws" />
+                    </a>
+                    <a href="https://www.instagram.com/lcho____/" target="_blank">
+                        <img src="https://skillicons.dev/icons?i=instagram" />
+                    </a>
+                    <a href="https://www.instagram.com/lcho____/" target="_blank">
+                        <img src="https://skillicons.dev/icons?i=twitter" />
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </p>
+            </div>
         </footer>
     );
 }

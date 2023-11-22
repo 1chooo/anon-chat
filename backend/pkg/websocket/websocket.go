@@ -1,3 +1,5 @@
+// websocket.go 
+
 package websocket
 
 import (
@@ -8,9 +10,11 @@ import (
 )
 
 var upgrader = websocket.Upgrader{
-    ReadBufferSize:  1024,
-    WriteBufferSize: 1024,
-    CheckOrigin: func(r *http.Request) bool { return true },
+    ReadBufferSize:  1024, // Size of the read buffer
+    WriteBufferSize: 1024, // Size of the write buffer
+    CheckOrigin: func(r *http.Request) bool { 
+        return true 
+    }, // Function to check request origin
 }
 
 func Upgrade(w http.ResponseWriter, r *http.Request) (*websocket.Conn, error) {

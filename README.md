@@ -1,4 +1,4 @@
-# Socket Programming
+# Online Anonymous Multi-User Message Board
 
 ## Initial Setup
 

@@ -44,7 +44,7 @@ func setupRoutes() {
 }
 
 func main() {
-    fmt.Println("Multiple Chat App v0.01")
+    fmt.Println("Online Anonymous Multi-User Chat App v0.01")
     fmt.Println("Server Running on Port 8080...")
     setupRoutes()
     http.ListenAndServe(":8080", nil)

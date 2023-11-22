@@ -4,7 +4,7 @@ import { connect, sendMsg } from "./api";
 import Header from './components/Header/Header';
 import ChatHistory from './components/ChatHistory/ChatHistory';
 import ChatInput from './components/ChatInput/ChatInput';
-import Footer from "./components/Footer/Footer";
+// import Footer from "./components/Footer/Footer";
 
 class App extends Component {
 	constructor(props) {
@@ -40,9 +40,9 @@ class App extends Component {
 					<ChatInput send={this.send} />
 				</div>
 
-				<div>
+				{/* <div>
 					<Footer/>
-				</div>
+				</div> */}
 			</div>
 		);
 	}

@@ -1,10 +1,28 @@
 .header {
-    background-color: #15223b;
+    background-color: #232f3e;
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    color: #f2f2f2;
+
+    h2 {
+        margin: 0;
+        padding: 0;
+    }
+
+    h3 {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.chatHeader {
+    background-color: #f7f7f7;
+    color: #08AAE3;
     width: 100%;
     margin: 0;
     padding: 30px;
-    color: white;
-
+    
     h2 {
         margin: 0;
         padding: 0;

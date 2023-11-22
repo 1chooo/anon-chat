@@ -1,21 +1,10 @@
-@import '~mdb-react-ui-kit/dist/css/mdb.min.css';
-
-.custom-footer {
+.Footer {
+    background-color: #8FA8C2;
+    // background-color: #3B4C59;
+    color: #fff;
+    padding: 10px;
     text-align: center;
-    background-color: #f1f1f1;
-
-    .custom-footer-text {
-        text-align: center;
-        color: #000;
-        padding: 1rem;
-        background-color: rgba(0, 0, 0, 0.2);
-    }
-
-    .social-media-btn {
-        transition: transform 0.3s ease-in-out;
-
-        &:hover {
-            transform: translateY(-3px);
-        }
-    }
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }

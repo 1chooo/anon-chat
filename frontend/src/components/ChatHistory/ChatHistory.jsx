@@ -1,21 +1,40 @@
-import React, { Component } from "react";
+import React, { Component, createRef } from "react";
 import "./ChatHistory.scss";
 import Message from '../Message/Message';
 
 class ChatHistory extends Component {
+    constructor(props) {
+        super(props);
+        this.chatHistoryRef = createRef();
+    }
+
+    componentDidMount() {
+        this.scrollToBottom();
+    }
+
+    componentDidUpdate(prevProps) {
+        if (prevProps.chatHistory.length !== this.props.chatHistory.length) {
+            this.scrollToBottom();
+        }
+    }
+
+    scrollToBottom() {
+        if (this.chatHistoryRef.current) {
+            this.chatHistoryRef.current.scrollTop = this.chatHistoryRef.current.scrollHeight;
+        }
+    }
+
     render() {
-        console.log(this.props.chatHistory);
         const messages = this.props.chatHistory.map(
-            msg => <Message message={msg.data} />
+            (msg, index) => <Message key={index} message={msg.data} />
         );
 
         return (
-            <div className='ChatHistory'>
-                <h2>Chat History</h2>
+            <div className='ChatHistory' style={{ height: "300px", overflowY: "auto" }} ref={this.chatHistoryRef}>
                 {messages}
             </div>
         );
-    };
+    }
 }
 
 export default ChatHistory;

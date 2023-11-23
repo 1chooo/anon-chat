@@ -51,21 +51,15 @@ $ go get github.com/gorilla/websocket
 
 ## Introduction
 
-<img src="./assets/imgs/5.jpg" height="200"/>
+![](./assets/imgs/5.jpg)
 
 ## Features
 
-<img src="./assets/imgs/3.jpg" height="200"/>
-
-<br>
-<br>
-<br>
-<br>
-
+![](./assets/imgs/3.jpg)
 
 ## Languages and Tools
 
-<img src="./assets/imgs/4.jpg" height="200"/>
+![](./assets/imgs/4.jpg)
 
 ## Project Structure
 
@@ -317,12 +311,13 @@ func Upgrade(w http.ResponseWriter, r *http.Request) (*websocket.Conn, error) {
 
 ## Future
 
-<img src="./assets/imgs/14.jpg" height="200"/>
+![](./assets/imgs/14.jpg)
 
 ## References
-<img src="./assets/imgs/16.jpg" height="200"/>
 
-<img src="./assets/imgs/15.jpg" height="200"/>
+![](./assets/imgs/16.jpg)
+
+![](./assets/imgs/15.jpg)
 
 ## License
 Released under [MIT](../LICENSE) by [Hugo ChunHo Lin](https://github.com/1chooo).

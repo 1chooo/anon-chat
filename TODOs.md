@@ -21,6 +21,13 @@
 - [x] 修改成按 `Enter` 才會傳送訊息
 - [x] 傳送為 `ChatInput` 的內容
 
+### Completed
+- [x] If we click `shift + enter`, we can go to the next line in the `ChatInput`.
+- [x] If we click `enter`, we can send the message.
+- [x] If \` or \`\`\` is both the beginning and the ending, it can be recognized as a code block (`<code></code>`).
 
+### Future
+- [ ] Get the number of Online Users from the server and represent it in the `Frontend`.
+ 
 [^1]: [Building a React Login Page Template](https://clerk.com/blog/building-a-react-login-page-template)
 [^2]: [React Bootstrap 5 Footer component](https://mdbootstrap.com/docs/react/navigation/footer/)

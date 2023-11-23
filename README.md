@@ -21,8 +21,16 @@ $ go mod init github.com/1chooo/socket-programming
 $ go get github.com/gorilla/websocket
 ```
 
+### Frontend Dependencies
+
+```shell
+$ npm i @fortawesome/fontawesome-free
+$ npm i @fortawesome/fontawesome-svg-core
+$ npm install react-syntax-highlighter
+```
+
 ### 作業要求:
-- 每位同學需製作出TCP or UDP Socket 的程式 (50%/80%) 剩下的30%會是加分項目
+- 每位同學需製作出 TCP or UDP Socket 的程式 (50%/80%) 剩下的30%會是加分項目
 - 一分PDF實驗報告，需詳細解釋出程式的功能(20%)
 - 不限制任何的程式語言
 

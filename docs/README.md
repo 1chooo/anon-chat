@@ -1,5 +1,4 @@
-Online Anonymous Multi-User Message Board
-=========================================
+# Online Anonymous Multi-User Message Board
 
 ![](./assets/imgs/1.jpg)
 

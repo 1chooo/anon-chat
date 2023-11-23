@@ -1,4 +1,4 @@
-// client.go
+// pkg/websocket/client.go
 
 package websocket
 

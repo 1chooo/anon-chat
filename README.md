@@ -1,8 +1,24 @@
 # Online Anonymous Multi-User Message Board
 
+![](./docs/assets/imgs/1.jpg)
+
+<div align='center'>
+
+[![project badge](https://img.shields.io/badge/1chooo-multi__message__board-informational?style=for-the-badge)](https://github.com/1chooo/multi-message-board)
+[![Made with Go](https://img.shields.io/badge/go-v1.21-blue.svg?style=for-the-badge)](https://golang.org "Go to Go homepage")
+[![Made with ReactJS](https://img.shields.io/badge/react-v17.0.2-blue.svg?style=for-the-badge)](https://reactjs.org "Go to ReactJS homepage")
+[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](../LICENSE "Go to license section")
+
+</div>
+
+## Demo
+
+### Video
 https://github.com/1chooo/socket-programming/assets/94162591/18f5680f-6982-4b40-861d-5a2fa4c3975a
 
+![](./docs/assets/video/demo_video.mp4)
 
+### [Docs](./docs/README.md)
 
 ## Initial Setup
 

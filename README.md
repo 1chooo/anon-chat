@@ -16,9 +16,9 @@
 ### Video
 https://github.com/1chooo/socket-programming/assets/94162591/18f5680f-6982-4b40-861d-5a2fa4c3975a
 
-![](./docs/assets/video/demo_video.mp4)
+### Docs
 
-### [Docs](./docs/README.md)
+[Online Anonymous Multi-User Message Board Docs](./docs/README.md)
 
 ## Initial Setup
 

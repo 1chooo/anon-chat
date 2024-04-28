@@ -18,9 +18,10 @@ class App extends Component {
 		connect((msg) => {
 			console.log("New Message")
 			this.setState(prevState => ({
-				chatHistory: [...this.state.chatHistory, msg]
-			}))
-			console.log(this.state);
+				chatHistory: [...prevState.chatHistory, msg] // Using prevState instead of this.state
+			}), () => {
+				console.log(this.state); // This will log the updated state after setState is completed
+			});
 		});
 	}
 
@@ -43,7 +44,7 @@ class App extends Component {
 				</div>
 
 				<div>
-					<Footer/>
+					<Footer />
 				</div>
 			</div>
 		);
